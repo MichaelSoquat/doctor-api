@@ -22,8 +22,8 @@ from Appointment.views import AppointmentViewSet
 
 router = routers.DefaultRouter()
 router.register(r'patients', PatientViewSet)
-# router.register(r'doctors', DoctorViewSet)
-# router.register(r'appointments', AppointmentViewSet)
+router.register(r'doctors', DoctorViewSet)
+router.register(r'appointments', AppointmentViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
